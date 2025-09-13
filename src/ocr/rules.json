@@ -1,0 +1,40 @@
+{
+  "declarations": [
+    {
+      "key": "mrp",
+      "patterns": [
+        "mrp.*?([\\d\\.]+)",
+        "maximum retail price.*?([\\d\\.]+)",
+        "price\\s*[:\\-]?\\s*rs\\.?\\s*([\\d\\.]+)"
+      ]
+    },
+    {
+      "key": "net_quantity",
+      "patterns": [
+        "net wt.*?([\\d\\.]+\\s*(g|kg|ml|l))",
+        "net weight.*?([\\d\\.]+\\s*(g|kg|ml|l))",
+        "net content.*?([\\d\\.]+\\s*(g|kg|ml|l))"
+      ]
+    },
+    {
+      "key": "date_of_manufacture",
+      "patterns": [
+        "mfg date.*?(\\d{2}[/\\.-]\\d{4}|\\d{2}[/\\.-]\\d{2})",
+        "pkd.*?(\\d{2}[/\\.-]\\d{4}|\\d{2}[/\\.-]\\d{2})"
+      ]
+    },
+    {
+      "key": "country_of_origin",
+      "patterns": [
+        "country of origin\\s*[:\\-]?\\s*(\\w+)",
+        "made in\\s+(\\w+)"
+      ]
+    },
+    {
+      "key": "consumer_care",
+      "patterns": [
+        "(?:consumer|customer|mkt by|marketed by|feedback|complaints|contact).*?(\\d{10}|[\\w\\.-]+@[\\w\\.-]+)"
+      ]
+    }
+  ]
+}
