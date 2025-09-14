@@ -4,7 +4,7 @@ from preprocessor import preprocess_text  # <-- IMPORT
 from parser import parse_declarations, load_rules
 
 # --- 1. Define the path to your image ---
-IMAGE_PATH = r"D:\Pyhton\ecommerce-compliance-checker\data\Test_image_4.jpg"
+IMAGE_PATH = r"D:\Pyhton\ecommerce-compliance-checker\data\Test_image_5.jpg"
 
 print("Initializing EasyOCR reader...")
 # --- 2. Initialize the EasyOCR reader ---
